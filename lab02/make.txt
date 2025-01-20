@@ -1,7 +1,11 @@
-1.
-2.
-3.
-4.
-5.
-6.
-7.
+1.通常是clean目标。在Makefile中，clean目标通常用于删除所有编译生成的文件，包括可执行文件和中间文件。
+2.通常是all目标。all目标通常用于编译项目中的所有程序，是Makefile中的默认目标。
+3.需要查看Makefile中的CC变量。通常默认是gcc（GNU C Compiler），但也可能是其他编译器，如clang。
+4.这需要查看Makefile中的CFLAGS变量。常见的C标准包括-std=c99、-std=c11等。如果没有明确指定，编译器会使用默认的C标准。
+5.在Makefile中引用变量FOO，可以使用$(FOO)或${FOO}。
+6.“达尔文”（Darwin）是苹果公司开发的操作系统的核心，是macOS的基础。它是一个基于Unix的操作系统内核。
+7.这需要查看Makefile的具体内容。通常，创建程序的规则类似于以下形式：
+``` makefile
+lfsr: lfsr.o
+    $(CC) -o lfsr lfsr.o
+```

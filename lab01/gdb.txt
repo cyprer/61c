@@ -1,9 +1,18 @@
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
+1.set args arg1 arg2 arg3
+2.break main/break 10
+3.next
+4.step
+5.continue
+6.print variable_name
+7.display variable_name
+8.info locals
+9.quit
+设置参数： set args arg1 arg2 arg3
+创建断点： break main 或 break 10
+执行下一行代码： next
+单步进入函数： step
+继续程序： continue
+打印变量或表达式： print variable_name 或 print 1+2
+每个步骤后显示变量： display variable_name
+显示所有局部变量： info locals
+退出GDB： quit
